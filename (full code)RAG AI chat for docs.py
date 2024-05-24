@@ -151,7 +151,7 @@ Answer the question based only on the following context:
 
 ---
 
-Answer the question based on the above context: {question}
+Please be a bank industry system expert and Answer the question based on the above context: {question}
 """
 
 def main():
@@ -167,7 +167,7 @@ def main():
     #########################################################################################################
     
     # Search the DB.
-    results = db.similarity_search_with_relevance_scores(query_text, k=20) # Control your chunks for inquiry here
+    results = db.similarity_search_with_relevance_scores(query_text, k=8) # Control your chunks for inquiry here
     if len(results) == 0 or results[0][1] < 0.7:
         print("Unable to find matching results.")
         return
@@ -191,7 +191,7 @@ def main():
             seen.add(source)
             sources.append(source)
 
-    formatted_response = f"Response: {response_text}\nSources: {sources}"
+    formatted_response = f"Response: \n{response_text}\n\nSources: {sources}"
     print(formatted_response)
 
 if __name__ == "__main__":
