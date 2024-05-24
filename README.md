@@ -26,8 +26,8 @@ Make sure to replace placeholders such as `your file location` and `Your OpenAI 
 ## Installation
 
 ```bash
-git clone https://github.com/yourgithubusername/your-repository-name.git
-cd your-repository-name
+git clone https://github.com/AlexYu979986510/RAG-AI-chat-model-for-document.git
+cd RAG-AI-chat-model-for-document
 pip install -r requirements.txt
 ```
 
