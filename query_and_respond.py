@@ -37,7 +37,7 @@ def main():
     #########################################################################################################
     
     # Search the DB.
-    results = db.similarity_search_with_relevance_scores(query_text, k=20) # Control your chunks for inquiry here
+    results = db.similarity_search_with_relevance_scores(query_text, k=8) # Control your chunks for inquiry here
     if len(results) == 0 or results[0][1] < 0.7:
         print("Unable to find matching results.")
         return
