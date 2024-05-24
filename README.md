@@ -47,6 +47,10 @@ pip install -r requirements.txt
    ```python
    python query_and_respond.py
    ```
+   
+## Citation
+This project was inspired by and references concepts from the following resource:
+- RAG + Langchain Python Project: Easy AI/Chat For Your Docs. Available on [YouTube](https://www.youtube.com/watch?v=tcqEUSNCn8I&list=PL0uMVtdM0ZG9lzI_Fx613-l3CAysEsx4B&index=3).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
